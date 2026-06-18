@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CraveAi - Master AI Video Creation</title>
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Optional Linkvertise setup: put your publisher ID in assets/js/script.js -->
-    <script src="https://linkvertise.net/cdn/linkvertise.js" defer></script>
+    <!-- Linkvertise API Script - Replace YOUR_ID with your actual Linkvertise ID -->
+    <script src="https://linkvertise.net/cdn/linkvertise.js"></script>
+    <script>
+        // Replace "YOUR_ID" with your actual Linkvertise publisher ID
+        linkvertise(YOUR_ID, {whitelist: [], blacklist: ["craveai.com", "localhost", "127.0.0.1"]});
+    </script>
 </head>
-
 <body>
+    <!-- ===== NAVIGATION ===== -->
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo">🎬 CraveAi</h1>
-            <ul class="nav-links">
+            <a href="index.html" class="logo">🎬 CraveAi</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
-
+                
                 <!-- Tutorials Dropdown -->
                 <li class="dropdown">
-                    <a href="#">Tutorials ▼</a>
+                    <a href="#" class="dropdown-toggle">Tutorials ▼</a>
                     <ul class="dropdown-menu">
-                        <li><a href="pages/cartoon.html">🎨 AI Cartoon</a></li>
-                        <li><a href="pages/realistic.html">🌄 AI Realistic</a></li>
-                        <li><a href="pages/song.html">🎵 AI Song</a></li>
-                        <li><a href="pages/editing.html">✂️ AI Editing</a></li>
-                        <li><a href="pages/prompt.html">💬 AI Prompt</a></li>
-                        <li><a href="pages/voice.html">🎤 AI Voice</a></li>
+                        <li><a href="cartoon.html">🎨 AI Cartoon</a></li>
+                        <li><a href="realistic.html">🌄 AI Realistic</a></li>
+                        <li><a href="song.html">🎵 AI Song</a></li>
+                        <li><a href="editing.html">✂️ AI Editing</a></li>
+                        <li><a href="prompt.html">💬 AI Prompt</a></li>
+                        <li><a href="voice.html">🎤 AI Voice</a></li>
                     </ul>
                 </li>
-
+                
                 <!-- Category Dropdown -->
                 <li class="dropdown">
-                    <a href="#">Category ▼</a>
+                    <a href="#" class="dropdown-toggle">Category ▼</a>
                     <ul class="dropdown-menu">
-                        <li><a href="pages/cartoon.html">🎨 AI Cartoon</a></li>
-                        <li><a href="pages/realistic.html">🌄 AI Realistic</a></li>
-                        <li><a href="pages/song.html">🎵 AI Song</a></li>
-                        <li><a href="pages/editing.html">✂️ AI Editing</a></li>
-                        <li><a href="pages/prompt.html">💬 AI Prompt</a></li>
-                        <li><a href="pages/voice.html">🎤 AI Voice</a></li>
+                        <li><a href="cartoon.html">🎨 AI Cartoon</a></li>
+                        <li><a href="realistic.html">🌄 AI Realistic</a></li>
+                        <li><a href="song.html">🎵 AI Song</a></li>
+                        <li><a href="editing.html">✂️ AI Editing</a></li>
+                        <li><a href="prompt.html">💬 AI Prompt</a></li>
+                        <li><a href="voice.html">🎤 AI Voice</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>
 
+    <!-- ===== MAIN CONTENT ===== -->
     <main>
         <section class="hero">
             <h1>Welcome to CraveAi</h1>
@@ -54,32 +58,32 @@
         </section>
 
         <section class="categories-grid">
-            <div class="category-card" onclick="location.href='pages/cartoon.html'">
+            <div class="category-card" onclick="location.href='cartoon.html'">
                 <div class="category-icon">🎨</div>
                 <h3>AI Cartoon</h3>
                 <p>Create amazing animated content using AI tools</p>
             </div>
-            <div class="category-card" onclick="location.href='pages/realistic.html'">
+            <div class="category-card" onclick="location.href='realistic.html'">
                 <div class="category-icon">🌄</div>
                 <h3>AI Realistic</h3>
                 <p>Generate lifelike videos that look professionally shot</p>
             </div>
-            <div class="category-card" onclick="location.href='pages/song.html'">
+            <div class="category-card" onclick="location.href='song.html'">
                 <div class="category-icon">🎵</div>
                 <h3>AI Song</h3>
                 <p>Compose original music and songs with AI</p>
             </div>
-            <div class="category-card" onclick="location.href='pages/editing.html'">
+            <div class="category-card" onclick="location.href='editing.html'">
                 <div class="category-icon">✂️</div>
                 <h3>AI Editing</h3>
                 <p>Enhance and edit videos using artificial intelligence</p>
             </div>
-            <div class="category-card" onclick="location.href='pages/prompt.html'">
+            <div class="category-card" onclick="location.href='prompt.html'">
                 <div class="category-icon">💬</div>
                 <h3>AI Prompt</h3>
                 <p>Master prompt engineering for better AI results</p>
             </div>
-            <div class="category-card" onclick="location.href='pages/voice.html'">
+            <div class="category-card" onclick="location.href='voice.html'">
                 <div class="category-icon">🎤</div>
                 <h3>AI Voice</h3>
                 <p>Create realistic voiceovers and clones with AI</p>
@@ -91,7 +95,6 @@
         <p>&copy; 2026 CraveAi. All tutorials are original content.</p>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
